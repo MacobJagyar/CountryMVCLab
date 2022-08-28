@@ -19,6 +19,7 @@ namespace CountryMVCLab
         {
             string color = "";
             DisplayCountry.Colors.ForEach(x => color += x +", ");
+            color = color.TrimEnd().TrimEnd(',');
 
             Console.WriteLine("\nName: " + DisplayCountry.Name);
             Console.WriteLine("Continent: " + DisplayCountry.Continent);
